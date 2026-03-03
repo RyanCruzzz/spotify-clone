@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+.menu-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; /*ao definir uma altura no main, vou mais facilidade para centralizar minha navbar (antes não tinha)*/
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff; /*tinta do svg, a cor que está nele*/
+    cursor: pointer;
+}
+
+
+/* ADICIONAR HOVER DOS BOTÕES */
+
+
+
+.menu, /*estou dizendo que todas essas classes, vão ser container flex, e seus filhos vão ser itens flex, assim eu posso usar o gap*/
+.inicio,
+.search,
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.navbar {
+    margin-top: .5rem;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button{
+    all: unset; /*limpa todos os estilos*/
+    cursor: pointer;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 1.2rem;
+    background-color: #121212;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.inicio:hover {
+    background-color: #5f5f5f;
+}
+
+
+.box-search { /*container pai*/
+    position: relative; /*aqui eu falo que qualquer filhos com position absolute vai se posicionar relativo a mim. Se eu não colocar isso, o botão ficario relativo à página inteira*/
+    width: 400px;
+}
+
+.box-search input {
+    width: 100%;
+    height: 36px;
+    background-color: #121212;
+    color: #fff;
+    padding-inline: 40px; /*o padding está fazendo parte da altura, assim estava ficando estranho visualmente*/
+    border-radius: 20px;
+    border: none;
+}
+
+.button-search { /*eu centralizei o button em relação ao container pai | mas isso não significa que o svg vai centralizar em relação ao button*/
+    position: absolute;
+    left: 10px; /*movo o botão 10px da borda esquerda do nosso container pai (box-search)*/
+    top:50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center; /*usando caso eu resolva colocar uma altura no meu button, ele está seguindo tamanho do svg (16x16px)*/
+    justify-content: center; /*no momento não está impactando em nada*/
+}
+
+.navegar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-search svg {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+}
+
+.menu-right .size-screen:hover {
+    background-color: #5f5f5f;
+    
+}
+
+/* ASIDE */
+
+
+
+
+
