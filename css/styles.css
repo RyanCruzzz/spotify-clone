@@ -6,6 +6,9 @@
 
 body {
     background-color: #000;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-main {
@@ -116,8 +119,27 @@ body {
     
 }
 
-/* ASIDE */
+/* Layout */
+.layout {
+    flex: 1; /*em resumo, o flex: 1; faz o elemento crescer para ocupar o espaço disponível dentro do container flex, como body tem altura de 100dvh, ele tem um espaço total da tela. E como o eixo principal do meu body é column, o flex: 1; vai atuar na altura e não na largura*/
+    display: flex;
+    margin-top: 0.6rem;
+    gap: 8px;
+}
 
+.main-content {
+    background-color: #747070;
+    flex: 1; /*lembrando que ele está fazendo o elemento ocupar o espaço disponível verticalmente*/
+    border-radius: 12px;
+}
+
+.sidebar {
+    background-color: #707070;
+    width: 20rem;
+    padding: 6px;
+    border-radius: 12px;
+    
+}
 
 
 
