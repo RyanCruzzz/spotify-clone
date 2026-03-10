@@ -111,7 +111,7 @@ body {
 .box-search svg {
     width: 18px;
     height: 18px;
-    fill: #ffffff;
+    fill: #fff;
 }
 
 .menu-right .size-screen:hover {
@@ -129,7 +129,7 @@ body {
 
 .main-content {
     background-color: #747070;
-    flex: 1; /*lembrando que ele está fazendo o elemento ocupar o espaço disponível verticalmente*/
+    flex: 1; /*lembrando que ele está fazendo o elemento ocupar o espaço disponível verticalmente por conta do eixo principal do body*/
     border-radius: 12px;
 }
 
@@ -138,9 +138,41 @@ body {
     width: 20rem;
     padding: 6px;
     border-radius: 12px;
-    
 }
 
+.icon-sidebar {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff; /*tinta do svg, a cor que está nele*/
+    cursor: pointer;
+}
 
+/* primeira seção da aside */
+.button-increase {
+    background: none;
+    border: none;
+}
 
+.criar {
+    display: flex;
+    gap: 2px;
+    width: 60px;
+    padding: 6px 10px;
+    align-items: center;
+    background-color: #383838;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create {
+    fill: #fff;
+    width: 20px;
+}
+
+.option-bibliotec {
+    display: flex;
+    justify-content: space-between;
+}
 
