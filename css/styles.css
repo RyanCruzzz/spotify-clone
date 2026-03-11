@@ -128,23 +128,33 @@ body {
 }
 
 .main-content {
-    background-color: #747070;
+    background-color: #181818;
     flex: 1; /*lembrando que ele está fazendo o elemento ocupar o espaço disponível verticalmente por conta do eixo principal do body*/
     border-radius: 12px;
 }
 
 .sidebar {
-    background-color: #707070;
+    background-color: #0e0d0d;
     width: 20rem;
     padding: 6px;
     border-radius: 12px;
 }
 
-.icon-sidebar {
-    width: 24px;
-    height: 24px;
-    fill: #ffffff; /*tinta do svg, a cor que está nele*/
+.option-bibliotec h2{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.sidebar-increase {
+    width: 22px;
+    fill: #fff; /*tinta do svg, a cor que está nele*/
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar-increase:hover {
+    transform: scale(1.1);
 }
 
 /* primeira seção da aside */
@@ -156,23 +166,35 @@ body {
 .criar {
     display: flex;
     gap: 2px;
-    width: 60px;
-    padding: 6px 10px;
+    width: 75px;
+    padding: 8px 14px;
     align-items: center;
-    background-color: #383838;
+    background-color: #2e2e2eaf; 
+    color: #fff;
+    font-weight: bold;
     border-radius: 12px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
+.criar:hover {
+    background-color: #5f5f5f;
+}
+
 .create {
     fill: #fff;
-    width: 20px;
+    width: 12px;
 }
 
 .option-bibliotec {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.option-playlist {
+    display: flex;
+    gap: 2px;
+    margin-top: 0.6rem;
+}
